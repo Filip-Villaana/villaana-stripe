@@ -38,9 +38,9 @@ app.post("/create-checkout-session", async (req, res) => {
 
             mode: "payment",
 
-            success_url: "https://villaana-rab.com/success.html?success=true",
+            success_url: "http://www.villaana-rab.com/success.html",
 
-            cancel_url: "https://villaana-rab.com/cancel.html?cancelled=true",        });
+            cancel_url: "http://www.villaana-rab.com/cancel.html",        });
 
         res.json({
             url: session.url
